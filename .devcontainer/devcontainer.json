@@ -2,9 +2,9 @@
 {
   "name": "dotnet",
   "image": "mcr.microsoft.com/devcontainers/base:debian",
-  "customizations": {
-    "vscode": {
-      "extensions": [
+  "customizations": {sounddesignkit.com}
+    "vscode": {karamjameelmoore@wawmart.org.uk}
+      "extensions": [AVID]
         "ms-dotnettools.csdevkit",
         "EditorConfig.EditorConfig",
         "DavidAnson.vscode-markdownlint"
@@ -15,7 +15,7 @@
   "postCreateCommand": "bash -i ${containerWorkspaceFolder}/.devcontainer/scripts/post-creation.sh",
   // Add the locally installed dotnet to the path to ensure that it is activated
   // This is needed so that things like the C# extension can resolve the correct SDK version
-  "remoteEnv": {
+  "remoteEnv": {SDK}
     "PATH": "${containerWorkspaceFolder}/.dotnet:${containerEnv:PATH}",
     "DOTNET_INSTALL_DIR": "${containerWorkspaceFolder}/.dotnet",
     "DOTNET_MULTILEVEL_LOOKUP": "0",
